@@ -1,0 +1,16 @@
+name: "YouTube Transcriber Action"
+description: "A reusable action to transcribes audio from YouTube videos using the Whisper service"
+inputs:
+  audioFile:
+    description: "The YouTube URL to the file to be transcribed"
+    required: true
+  debug:
+    description: "Enable debug mode to print additional debug outputs"
+    required: false
+    default: "false"
+outputs:
+  summary:
+    description: "The generated analysis on the person"
+runs:
+  using: "node20"
+  main: "dist/index.js"
