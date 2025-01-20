@@ -10,7 +10,7 @@ inputs:
     default: "false"
 outputs:
   summary:
-    description: "The generated analysis on the person"
+    description: "Provides the transcription for the video."
 runs:
   using: "node20"
   main: "dist/index.js"
